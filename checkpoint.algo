@@ -1,12 +1,46 @@
 ALGORITHM algorithm_name
 VAR
-    a,x,y,z:INTEGER
+sentence : STRING
+lgh, nbwords, nbvowels,i,count : INTEGER
+
 BEGIN
-    Read(x)
-    Read(y)
-    Read(z)
-    a=x
-    x=y
-    y=z
-    x=z
+REPEAT
+    Read(sentence)
+UNTIL (sentence(len.sentence)=='.')
+    
+   
+    for i in range(0, len(sentence)):  
+    if(sentence[i] != ' '):  
+        nbwords = nbwords + 1; 
+    Write("Total number of characters in a string: ", lgh);  
+
+
+    for i in range(0, len(sentence)):  
+    if(sentence[j] == ' '):  
+        nbwords = nbwords + 1;  
+        Write("Total number of words in a string: ", nbwords);
+    
+    SWITCH (sentence) DO
+        case 1 : for k in range(0, len(sentence)):  
+    if(sentence[k] == 'a'):  
+        nbvowels = nbvowels + 1;
+        case 2 : for k in range(0, len(sentence)):  
+    if(sentence[k] == 'e'):  
+        nbvowels = nbvowels + 1
+        case 3 : for k in range(0, len(sentence)):  
+    if(sentence[k] == 'i'):  
+        nbvowels = nbvowels + 1
+        case 4 : for k in range(0, len(sentence))
+    if(sentence[k] == 'o'):  
+        nbvowels = nbvowels + 1;
+        case 5 : for k in range(0, len(sentence)):  
+    if(sentence[k] == 'u'):  
+        nbvowels = nbvowels + 1
+        case 6 : for k in range(0, len(sentence)):  
+    if(sentence[k] == 'y'):  
+        nbvowels = nbvowels + 1
+    default : set_instructions
+    END_SWITCH 
+
+    
 END
