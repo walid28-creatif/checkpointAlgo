@@ -1,0 +1,12 @@
+ALGORITHM algorithm_name
+VAR
+    a,x,y,z:INTEGER
+BEGIN
+    Read(x)
+    Read(y)
+    Read(z)
+    a=x
+    x=y
+    y=z
+    x=z
+END
