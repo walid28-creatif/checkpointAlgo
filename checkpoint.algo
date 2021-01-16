@@ -1,7 +1,7 @@
 ALGORITHM algorithm_name
 VAR
 sentence : STRING
-lgh, nbwords, nbvowels,i,count : INTEGER
+lgh, nbwords, nbvowels,i,j,k,count : INTEGER
 
 BEGIN
 REPEAT
